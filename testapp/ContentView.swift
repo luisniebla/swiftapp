@@ -8,12 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        // Call modifiers on the Text display
+        // By default, stacks center content along their axist
+        VStack(alignment: .leading) {
+            Text("Bell Rock")
+                .accessibilityAddTraits([.isHeader])
+                .font(.title)
+                .fontWeight(.light)
+                .accessibilityLabel("Title")
+                .foregroundStyle(.blue)
+                .backgroundStyle(.black)
+            HStack {
+                
+                Text("Coconino National Forest")
+                    .font(.subheadline)
+                Spacer()
+                Text("Sedona, Arizona")
+            }
         }
         .padding()
     }
