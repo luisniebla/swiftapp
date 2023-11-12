@@ -32,7 +32,8 @@ struct ContentView: View {
                     Text("Sedona, Arizona").foregroundStyle(.secondary)
                 }
                 Divider()
-                Text("More Info")
+                Text("About Bell Rock").font(.title2)
+                Text("Bell Rock is the most popular hike in all of Sedona. Some say there are vortexes at the top.").font(.title2)
             }
             .padding()
             Spacer()
